@@ -1,0 +1,197 @@
+2014-01-17 23:40:06Z -!- Zerovirus has joined #wesnoth-umc-dev
+2014-01-17 23:43:28Z <vultraz> fabi:
+2014-01-17 23:47:49Z <fabi> Zerovirus: hi
+2014-01-17 23:48:11Z <Zerovirus> fabi: sup
+2014-01-17 23:48:25Z <Zerovirus> so basically as vultraz may or may not have related, i've got like no time to work on wesnoth
+2014-01-17 23:48:52Z <Zerovirus> i basically posted all the progress on art i accomplished over the winter break on the day before i went back to school for the spring semester :V
+2014-01-17 23:49:19Z <fabi> Zerovirus: Do you have some minutes to talk about the "not-zerg" faction? I do not need any work to be done on your side, I just like to know what ideas you had while drawing them.
+2014-01-17 23:49:26Z <Zerovirus> (this also might be pertinent to _8680_ who also offered to help)
+2014-01-17 23:49:43Z <Zerovirus> well, the not-zerg faction? one idea for them i had was, like, a 'deploying fortress'
+2014-01-17 23:50:02Z <Zerovirus> like, a recruitable Lv2 with no attacks and a Lv2-appropriate amount of HP, which has no levelups
+2014-01-17 23:50:36Z <Zerovirus> at any point, you can right-click one of these units and select the 'deploy' option, converting that tile immediately to a Castle tile
+2014-01-17 23:51:15Z <Zerovirus> or maybe something else if that particular concept's a bit too OP, like maybe changing the tile to a gross swampy tile that hinders movement
+2014-01-17 23:51:34Z <Zerovirus> seeing as these guys are not-zerg, i figured they ought to have a bit of terrain-control with their own equivalent not-creep mechanisms
+2014-01-17 23:51:44Z <fabi> okay
+2014-01-17 23:51:56Z <fabi> You tell me the answer before I ask the question.
+2014-01-17 23:52:05Z <fabi> The not-creep would have been my next.
+2014-01-17 23:53:03Z <Zerovirus> as far as fluff goes though i'm probably not going with the whole 'spacebugs that want to eat ALL THE THINGS' trope
+2014-01-17 23:53:28Z <Zerovirus> rather these guys will just be more of... like, a native ecology which evolved rather independently of the rest of the world, and which doesn't play well with new species
+2014-01-17 23:53:38Z <Zerovirus> think, like, viruses from the columbian exchange and all that, leading to ethnic conflicts
+2014-01-17 23:54:11Z <Zerovirus> the fact that most of the inhabitants of this little microbiome are super fucking gross (due to their cellular mechanisms actually implementing micro-scale necromancy as opposed to ATP) also doesn't really help inter-racial relationships
+2014-01-17 23:54:29Z <fabi> :-)
+2014-01-17 23:55:08Z <fabi> I have searched for an alien looking egg for breeding them.
+2014-01-17 23:55:29Z <fabi> There was one in a different thread, ugly but good enough for a stub.
+2014-01-17 23:56:14Z <Zerovirus> as a sidenote, one of the goals of this faction is a rather /different/ form of balance
+2014-01-17 23:56:26Z <Zerovirus> like, wesnoth presently is mostly balanced around physical/magical damage dichotomies
+2014-01-17 23:56:41Z <Zerovirus> we've got units like skeletons practically immune to steel weapons but which are weak to fire and arcane
+2014-01-17 23:56:51Z <Zerovirus> and we've got units which are resistant to fire and arcane but are weak to physical attacks
+2014-01-17 23:57:16Z <Zerovirus> i'm thinking about moving away from that particular interaction as the core of balance and instead moving towards a 'biological/mechanical' dichotomy
+2014-01-17 23:57:38Z <Zerovirus> faction unit roles would be more defined by whether they're biological-type mech-killers or bio-type bio-killers or whatnot
+2014-01-17 23:58:16Z <fabi> Ah
+2014-01-17 23:58:19Z <fabi> I see.
+2014-01-17 23:58:38Z <Zerovirus> (possibly with a third type, like 'constructs' which represents magical thingies)
+2014-01-17 23:59:26Z <Zerovirus> these are all rather nebulous design principles right now, especially as i haven't actually, y'know, laid down any statistics except for like one faction
+2014-01-17 23:59:35Z <Zerovirus> but anyways yeah that's about all the ideas i've had
+2014-01-17 23:59:42Z <fabi> How far do you want to go in the starcraft direction?
+2014-01-18 00:00:03Z <Zerovirus> uhhh... define 'starcraft direction'? like, are you talking about the gameplay or the fluff?
+2014-01-18 00:00:10Z <fabi> I mean, buildings and resource gathering are no problem from a coder's point of view.
+2014-01-18 00:00:16Z <fabi> Both.
+2014-01-18 00:00:34Z <Zerovirus> man, if we could pull off a complete starcraft-like structural system i would be SO happy
+2014-01-18 00:00:48Z <Zerovirus> if that's at all possible i'd definitely angle for that
+2014-01-18 00:01:25Z <fabi> With that gas and the crystals being the resources?
+2014-01-18 00:01:27Z <_8680_> What would “a complete starcraft-like structural system” entail?
+2014-01-18 00:01:35Z <fabi> ^
+2014-01-18 00:01:53Z <Zerovirus> well, basically just: decouplement from the concept of 'leaders recruit at keeps'
+2014-01-18 00:01:58Z <vultraz> Buildings with multiple functions, one of which is spawning creeps, I guess
+2014-01-18 00:02:02Z <Zerovirus> like, you spawn with a leader
+2014-01-18 00:02:07Z <Zerovirus> which you can right-click and deploy into a building
+2014-01-18 00:02:13Z <_8680_> I some old unfinished Lua stuff that was going to have resources etc that I could dig out.
+2014-01-18 00:02:23Z <Zerovirus> which then converts the tile on it into a keep and the adjacent tiles into castles
+2014-01-18 00:02:25Z <_8680_> s/I/I have/
+2014-01-18 00:02:41Z <Zerovirus> at which point you can recruit more (expensive) units to make more keeps
+2014-01-18 00:02:54Z <Zerovirus> (also, would it be possible to completely change the gold-gathering mechanism of the game)
+2014-01-18 00:03:08Z <_8680_> I think I had building buildings from the context menu implemented.
+2014-01-18 00:03:09Z <Zerovirus> (like, make it so that a village only offers gold if there's a unit of your alignment on that village at the start of your turn)
+2014-01-18 00:03:41Z <Zerovirus> (we obviously can't micromanage miners going from the base to the village, but forcing the player to commit a portion of their economy to keeping their village base staffed with resource-suppliers would also serve the same strategic role in a turn-based game)
+2014-01-18 00:04:00Z <_8680_> That would be easy enough, by taking away the game-given gold as we wish.
+2014-01-18 00:04:02Z <Zerovirus> so each faction would have a super-useless super-cheap lv0 good for nothing but camping out on a village and churning out gold
+2014-01-18 00:04:25Z <Zerovirus> and i guess each factino would also have, like, one or two buildings
+2014-01-18 00:04:38Z <_8680_> Or continually de-capturing unattended villages.
+2014-01-18 00:04:47Z <Zerovirus> i'm not sure i'd be able to balance extremely complex building hierarchies, but allowing buildings means that we can really get interesting ideas
+2014-01-18 00:04:57Z <Zerovirus> (i am having a lot of ideas now that the idea of buildings in this era is a thing)
+2014-01-18 00:05:11Z <fabi> We could go away from the village and gold system at all.
+2014-01-18 00:05:34Z <fabi> Meaning that villages are no longer a resource gathering thing in the game.
+2014-01-18 00:05:58Z <Zerovirus> sure, villages as just a healing- thing could work, or- is there a way to automate, like, removing villages as a whole from a game when a certain era file is loaded up?
+2014-01-18 00:06:23Z <_8680_> I could remove all villages in a Lua global event.
+2014-01-18 00:06:40Z <fabi> Yes, there are some different solutions to it.
+2014-01-18 00:07:33Z <Zerovirus> sweet, then we are SET.
+2014-01-18 00:07:38Z <fabi> The question is if the resources we need for our game mechanics can be deployed automatically.
+2014-01-18 00:08:12Z <fabi> We might end with an era that also demands it's own maps/scenarios.
+2014-01-18 00:08:21Z <Zerovirus> it's obviously impractical to go over the existing maps and add in custom resources one by one, yeah
+2014-01-18 00:08:22Z <fabi> "SET"?
+2014-01-18 00:08:39Z <Zerovirus> colloquial for 'prepared' :V
+2014-01-18 00:08:45Z <fabi> ah
+2014-01-18 00:08:52Z <Zerovirus> or if you want, Super Excited Time?
+2014-01-18 00:08:55Z <Zerovirus> i'm not good at acronyms
+2014-01-18 00:10:00Z <Zerovirus> oops my laptop is dying
+2014-01-18 00:10:01Z <fabi> I can mimic the Starcraft gas source and crystal field stuff.
+2014-01-18 00:10:02Z <Zerovirus> i must find a charger
+2014-01-18 00:11:07Z <_8680_> I can process maps pretty much however you want in Lua global events — e.g., changing terrain or placing items.
+2014-01-18 00:12:07Z <_8680_> What would the mechanics for obtaining resources for construction be?
+2014-01-18 00:12:19Z <fabi> I am not sure if we really should introduce a "worker" unit. Which travels between source of resource and home.
+2014-01-18 00:12:29Z <Zerovirus> it oughtn't have to
+2014-01-18 00:12:36Z <Zerovirus> a worker unit would just stay on the resource it's harvesting
+2014-01-18 00:12:42Z <Zerovirus> and automatically harvest at the start of a turn
+2014-01-18 00:12:51Z <Zerovirus> if it dies, you need to send a new worker, or abandon that harvest site
+2014-01-18 00:13:01Z <fabi> So it is pretty much like villages.
+2014-01-18 00:13:09Z <fabi> But you need a unit to be present.
+2014-01-18 00:13:18Z <fabi> And it needs to be a special one.
+2014-01-18 00:13:18Z <Zerovirus> sort of; imma talk gamedesign a bit
+2014-01-18 00:13:30Z <Zerovirus> basically, a worker exists for one reason: forcing the player to balance their economy
+2014-01-18 00:13:40Z <Zerovirus> like, you can't devote 100% of your starting resources to soldiers because then you wouldn't have any income
+2014-01-18 00:13:57Z <Zerovirus> and you can't devote 100% of your resources to workers because if an enemy defects and rushes you with more soldiers, then you've lost the game from the start
+2014-01-18 00:14:18Z <Zerovirus> so there's a balance-point between workers, which in game-design terms helps slow down the escalation of units and also provides a secondary strategic objective beyond 'kill the base'
+2014-01-18 00:14:42Z <Zerovirus> like, if you have to make sure you always have workers, you won't be able to spend all your money on fighters which means that you'll have to spend your actual fighting resources more carefully
+2014-01-18 00:15:10Z <Zerovirus> this is what they mean in starcraft when they say that fights set back your economy- if your worker or fighter ratio fall out of the appropriate ratio, you either have to waste time buying more fighters and less workers and thus expand your infrastructure less
+2014-01-18 00:15:16Z <Zerovirus> or you have to buy more workers just to catch up with the other guy
+2014-01-18 00:15:43Z <Zerovirus> wesnoth obviously doesn't have any of this because capturing villages is automatic and doesn't require that you invest any 'initial' capital
+2014-01-18 00:15:53Z <Zerovirus> to put wesnoth into starcraft-theory terms, all wesnoth units are also workers
+2014-01-18 00:16:00Z <Zerovirus> meaning that you can have simultaneous 100% workers AND 100% fighters
+2014-01-18 00:16:08Z <Zerovirus> meaning that all of the stuff i said doesn't even apply to wesnoth
+2014-01-18 00:16:48Z <fabi> Okay, so we change that.
+2014-01-18 00:16:59Z <fabi> Introducing at least one unit per side which is a worker.
+2014-01-18 00:17:09Z <Zerovirus> yup
+2014-01-18 00:17:12Z <fabi> Or even a worker for each resource we offer.
+2014-01-18 00:17:24Z <fabi> Like miner for mines.
+2014-01-18 00:17:44Z <Zerovirus> maybe, though i'd hesitate to introduce more than 4 resources
+2014-01-18 00:17:53Z <Zerovirus> right now i'm figuring that we're going to stick with 3 at the most
+2014-01-18 00:18:49Z <fabi> The worker unit might have some special features beside the mining (like building buildings) but is in general not a good combat unit.
+2014-01-18 00:18:51Z <Zerovirus> having a whole lot of resources introduces a lot of myriad balance issues i'm not sure i want to really work around, mostly because i don't know how it'd work out and there'd be another whole set of trial and error before we figured out how to implement it balancedly
+2014-01-18 00:19:26Z <fabi> Yes, there is no need to have a dozen of different resources.
+2014-01-18 00:19:32Z <fabi> Which resources have you thought of?
+2014-01-18 00:20:32Z <Zerovirus> metal/lumber/(is there a good one-word term for 'heavy construction materials'), magic/mana/phlibotinum crystals, and gold/manpower/somethign else that represents 'population'
+2014-01-18 00:21:04Z <Zerovirus> it doesn't have to be, like, exactly those things
+2014-01-18 00:21:09Z <Zerovirus> just one material that mechanical units tend to rely on
+2014-01-18 00:21:12Z <Zerovirus> one material that magical units rely on
+2014-01-18 00:21:17Z <Zerovirus> and one material that biological units rely on
+2014-01-18 00:21:41Z <Zerovirus> (intersections between them are possible, like it's not like each material is exclusively used for that type- just frequently for that type)
+2014-01-18 00:22:21Z <_8680_> Is “biological units” specifically the Flesh Contagion, or does it include the Crimson Legion?
+2014-01-18 00:22:33Z <Zerovirus> yeah it includes legion
+2014-01-18 00:22:38Z <Zerovirus> it also includes jade-alchemicals
+2014-01-18 00:22:45Z <Zerovirus> at least the actually fleshy ones
+2014-01-18 00:22:52Z <Zerovirus> it's basically anything that's not a robot or spirit
+2014-01-18 00:23:06Z <fabi> food
+2014-01-18 00:23:18Z <fabi> biolagical units rely on food.
+2014-01-18 00:23:39Z <fabi> Not only to buy/grow/breed them.
+2014-01-18 00:23:44Z <fabi> But also to maintain them.
+2014-01-18 00:23:46Z <Zerovirus> note to self: balancing mechanicals will be difficult if steelhive is all mechanical, so i oughta do something bout that
+2014-01-18 00:24:12Z <fabi> So food could be a resource, one that also demands upkeep.
+2014-01-18 00:24:22Z <Zerovirus> sure
+2014-01-18 00:24:38Z <fabi> Provided by farms.
+2014-01-18 00:24:45Z <Zerovirus> (actually, is it possible to make Mechanical, Magical, and Biological dummy-traits instead of actual Races)
+2014-01-18 00:24:51Z <Zerovirus> (so units can be dual-typed or even many-typed)
+2014-01-18 00:25:00Z <Zerovirus> (and so attacks can, say, deal more damage to units with that trait or less depending)
+2014-01-18 00:25:06Z <fabi> Maybe the not zerg can also use villages to produce food, they just harvest the inhabitants.
+2014-01-18 00:25:17Z <Zerovirus> how gruesome~
+2014-01-18 00:25:28Z <fabi> :-)
+2014-01-18 00:25:42Z <Zerovirus> anyways, a bit more on other factions, if you're interested:
+2014-01-18 00:25:48Z <_8680_> It would be possible to use traits like that, but filtering on them constantly could be slow.
+2014-01-18 00:25:56Z <Zerovirus> steelhive you guys may or may not already know, they're basically /actually/ like the zerg in that they want to assimilate everything
+2014-01-18 00:25:59Z <Zerovirus> so really they're the borg
+2014-01-18 00:26:19Z <_8680_> (“constantly”, or rather on each attack.)
+2014-01-18 00:26:48Z <Zerovirus> eh, then we can balance around the three types as exclusive races
+2014-01-18 00:27:14Z <Zerovirus> i'll just reduce the prominence of things that do tons of damage to mechanicals like how right now we restrain how many units have Arcane damage
+2014-01-18 00:27:19Z <_8680_> I don’t know how slow it is; it might not really matter.
+2014-01-18 00:27:47Z <Zerovirus> continuing on other factions- the jade alchemicals are basically soul-powered immortal transhumanists- in-game this probably translates to becoming stronger (gaining more xp?) by killing biological units and eating their souls
+2014-01-18 00:28:36Z <Zerovirus> the crimson legion- okay i've not really got much of a gameplay quirk, but as far as a setting goes they're like a blend of feudal japan and ancient rome
+2014-01-18 00:29:17Z <Zerovirus> very martially oriented, very melee-damage-centric; they acknowledge that archery is necessary for military success, but consider archery also less morally satisfying than martial force of arms, so their archers have a tradition of wearing masks to cover their faces
+2014-01-18 00:29:56Z <Zerovirus> "if you kill without seeing the face of your opponent, then neither can those close to you see your face" blah blah cultural shame.
+2014-01-18 00:30:01Z <Zerovirus> (that's about all i've got for them)
+2014-01-18 00:33:18Z <fabi> Zerovirus: That is fine.
+2014-01-18 00:33:32Z <fabi> Zerovirus: The project looks promising.
+2014-01-18 00:35:03Z <Zerovirus> thanks :D
+2014-01-18 00:35:09Z <_8680_> Zerovirus: Do you have a name for this era?
+2014-01-18 00:35:39Z <Zerovirus> a prelim name right now is "Age of Artifice", mostly due to the notion that artificial devices like machines and robots and such play a large role in the game-balance
+2014-01-18 00:35:43Z <fabi> Zerovirus: Please allow me to tell you what I have done so far for the not-zerg and see if it matches your expectations.
+2014-01-18 00:36:10Z <Zerovirus> i'm thinking about changing it to something that matches a metaplot more once i figure out just how i want to integrate all these ecological/cultural clashes into the backstory
+2014-01-18 00:36:14Z <Zerovirus> fabi: go for it
+2014-01-18 00:36:34Z <fabi> Okay.
+2014-01-18 00:36:49Z <Zerovirus> (though: i've got to go catch a movie soon so, no guarantees on how long i'm staying around)
+2014-01-18 00:37:06Z <fabi> I gave the faction a working name, "Flesh Hive".
+2014-01-18 00:37:34Z <fabi> And the era is named "Age of Hives"
+2014-01-18 00:37:42Z <_8680_> What was wrong with Flesh Contagion?
+2014-01-18 00:37:43Z <Zerovirus> probably going to change that in the future, can't have every faction be named something-hive after all :P
+2014-01-18 00:38:02Z <fabi> Flesh Contation is fine.
+2014-01-18 00:38:15Z <fabi> We can change this things easily.
+2014-01-18 00:38:22Z <Zerovirus> Flesh Contagion is also a WIP name, like i came up with that back when i hadn't decided that these guys weren't going to be actually zerg, just fyi
+2014-01-18 00:38:25Z <fabi> I just needed ids and names to work with.
+2014-01-18 00:38:59Z <fabi> The player can only produce eggs.
+2014-01-18 00:39:21Z <fabi> Those eggs hedge into a level 0 larvae form.
+2014-01-18 00:40:03Z <fabi> As long as those larvae find food they gain xp, even without fight.
+2014-01-18 00:40:23Z -!- bumbadadabum has joined #wesnoth-umc-dev
+2014-01-18 00:40:32Z <fabi> So you have a constant spam of weak level0 units.
+2014-01-18 00:40:51Z <Zerovirus> wow, that sounds pretty cool
+2014-01-18 00:41:01Z <Zerovirus> (this faction is going to totally be on a balancing-plane of its own isn't it)
+2014-01-18 00:41:12Z <Zerovirus> (we are breaking so many wesnoth-balancing wisdom-rules)
+2014-01-18 00:41:30Z <fabi> When the larvae form gets enough xp it will advance into a cocoon.
+2014-01-18 00:41:54Z <fabi> This cocoon, like the edge gains xp just by sitting around.
+2014-01-18 00:42:13Z <fabi> (Well, maybe if only on creep or when a nearby breeder unit is around)
+2014-01-18 00:43:00Z <fabi> From the cocoon the level 1 young adult non-zerg hatches.
+2014-01-18 00:43:20Z <bumbadadabum> eh
+2014-01-18 00:43:42Z <bumbadadabum> having cocoons won't work too well in wesnoth
+2014-01-18 00:43:58Z <bumbadadabum> having a unit that's a sitting duck for an X amount of time
+2014-01-18 00:44:48Z <Zerovirus> yeah, i'm thinking the same thing here
+2014-01-18 00:45:06Z <Zerovirus> there ought to be at least some units which immediately come into play, otherwise you're a sitting duck like bumb said
+2014-01-18 00:45:32Z <Zerovirus> plus: the not-zerg guys aren't, like, all insects or anything, they've just got alien biology which coincidentally makes them look really gross
+2014-01-18 00:45:36Z <fabi> Well, you have plenty of level0 ones.
+2014-01-18 00:45:47Z <Zerovirus> there's no reason for every one of them to go through a cocoon phase, they're not even all the same species
+2014-01-18 00:46:13Z <Zerovirus> like, this faction's made up of a haphazard alliance of things from the same ecosystem trying to repel outside invaders exploiting their home's resources and enslaving/killing their people :V
+2014-01-18 00:46:28Z <Zerovirus> (as far as the story goes they'd be the good guys if they didn't happen to also eat villagers for sustenance)
+2014-01-18 00:47:25Z <Zerovirus> still man this project is really going to go places :V
+2014-01-18 00:47:34Z <Zerovirus> i await anxiously what classic rules of wesnoth design we break in the future
+2014-01-18 00:47:38Z <Zerovirus> for now i gotta go catch my movie though
+2014-01-18 00:47:39Z <bumbadadabum> it's not nothing
+2014-01-18 00:47:41Z <Zerovirus> see you guys later
+2014-01-18 00:47:46Z <bumbadadabum> have fun
+2014-01-18 00:48:10Z <fabi> Zerovirus: bye :-)
+2014-01-18 00:48:21Z -!- Zerovirus has quit [Quit: Page closed]
