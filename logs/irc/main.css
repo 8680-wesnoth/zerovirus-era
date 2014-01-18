@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700';
+
+:root {
+	font-family: Ubuntu;
+	color: #000;
+	background-color: #FFF;
+}
+
+:root, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: block;
+	margin: 0 8em;
+	padding: 4em 0;
+}
+
+time {
+	color: gray;
+}
